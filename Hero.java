@@ -5,8 +5,8 @@ public abstract class Hero {
     private Integer level;
     private Integer hp;
     private Integer dps;
-    // Weapon 
-    // Armor
+    private Weapon weapon;
+    private Armor armor;
 
     public Hero(Integer level, Integer hp, Integer dps) {
         this.level = level;
@@ -26,4 +26,16 @@ public abstract class Hero {
         return hp;
     }
     
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public void setArmor(Armor armor) {
+        this.armor = armor;
+    }
+
 }
